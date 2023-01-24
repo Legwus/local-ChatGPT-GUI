@@ -2,8 +2,16 @@
 import openai
 from tkinter import *
 
+def loadToken():
+    text_file = open("token.txt", "r")
+    data = text_file.read()
+    return data
+
+
 # Enter your OpenAI API Key here. You can get it from their website.
-openai.api_key = "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"
+
+
+openai.api_key = loadToken()
 
 # Choose your model engine. This will determine the language model that will process your input and generate a response.
 # The following order is in terms of performance. The possibilities are text-davinci-003 or 002, text-curie-001, text-babbage-001 or text-ada-001
