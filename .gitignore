@@ -1,3 +1,5 @@
 /build
 /dist
 /token.txt
+/chatgptlib.spec
+/local-chatGPT-GUI.code-workspace
