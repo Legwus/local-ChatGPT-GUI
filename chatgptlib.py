@@ -49,8 +49,8 @@ tekst.pack()
 
 # actually no idea what this stuff does, ChatGPT told me to use this so i did.
 # I presume yview means that the orientation is vertical (scrollbar goes up and down), and side=RIGHT seems pretty self explanatory.
-Scrollbar = Scrollbar(root, command=tekst.yview)
-Scrollbar.pack(side=RIGHT, fill=Y)
+scrollbar = Scrollbar(root, command=tekst.yview)
+scrollbar.pack(side=RIGHT, fill=Y)
 
 tekst.config(yscrollcommand=Scrollbar.set)
 # This is the size of your text box. if you want it wider or higher, tweak this.
