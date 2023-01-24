@@ -1,7 +1,12 @@
 import openai
 import time
 
-openai.api_key = "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"
+def loadToken():
+    text_file = open("token.txt", "r")
+    data = text_file.read()
+    return data
+
+openai.api_key = loadToken()
 
 model_engine = "text-davinci-003"
 time.sleep(3)
